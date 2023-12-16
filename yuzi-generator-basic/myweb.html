@@ -1,16 +1,36 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>鱼皮官网</title>
-</head>
-<body>
-<h1>欢迎来到鱼皮官网</h1>
-<ul>
-            <li><a href="https://codefather.cn">编程导航</a></li>
-        <li><a href="https://laoyujianli.com">老鱼简历</a></li>
-</ul>
-<footer>
-    2,023 鱼皮官网. All rights reserved.
-</footer>
-</body>
-</html>
+package com.yupi.acm;
+
+import java.util.Scanner;
+
+/**
+ * ACM 输入模板（多数之和）
+ * @Author yupi
+ */
+public class MainTemplate {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        while (scanner.hasNext()) {
+
+            // 读取输入元素个数
+            int n = scanner.nextInt();
+
+            // 读取数组
+            int[] arr = new int[n];
+            for (int i = 0; i < n; i++) {
+                arr[i] = scanner.nextInt();
+            }
+
+            // 处理问题逻辑，根据需要进行输出
+            // 示例：计算数组元素的和
+            int sum = 0;
+            for (int num : arr) {
+                sum += num;
+            }
+
+            System.out.println("输出结果 " + sum);
+        }
+
+
+        scanner.close();
+    }
+}
